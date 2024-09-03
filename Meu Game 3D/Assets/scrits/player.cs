@@ -16,6 +16,7 @@ public class player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("START");
         TryGetComponent(out rb);
     }
 
@@ -30,6 +31,7 @@ public class player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("UPDATE");
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         Vector3 direcao = new Vector3(h, 0, v);
